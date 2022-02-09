@@ -12,7 +12,7 @@ class HomeScreen extends StatefulWidget {
 class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
-    var baseColor = Color.fromARGB(255, 15, 15, 15);
+    var baseColor = Color.fromARGB(255, 14, 1, 9);
 
     var size = MediaQuery.of(context).size;
     var height = MediaQuery.of(context).size.height;
@@ -20,9 +20,10 @@ class _HomeScreenState extends State<HomeScreen> {
     return Scaffold(
       backgroundColor: baseColor,
       appBar: AppBar(
-        elevation: 10,
+        elevation: 0.5,
         backgroundColor: baseColor,
         centerTitle: true,
+        title: Text("IR Remote"),
         leading: IconButton(
           onPressed: () {},
           icon: const Icon(Icons.menu),
@@ -173,6 +174,228 @@ class _HomeScreenState extends State<HomeScreen> {
                   ),
                 ],
               ),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceAround,
+                crossAxisAlignment: CrossAxisAlignment.center,
+                children: [
+                  Column(
+                    mainAxisAlignment: MainAxisAlignment.spaceAround,
+                    crossAxisAlignment: CrossAxisAlignment.center,
+                    children: [
+                      SizedBox(
+                        height: height * 0.03,
+                      ),
+                      ClayContainer(
+                        height: 50,
+                        width: 50,
+                        color: baseColor,
+                        depth: 10000,
+                        emboss: true,
+                        spread: 1.10,
+                        borderRadius: 25,
+                        child: Padding(
+                          padding: const EdgeInsets.only(left: 8),
+                          child: IconButton(
+                              onPressed: () {},
+                              icon: const Icon(
+                                Icons.arrow_back_ios,
+                                size: 25,
+                                color: Color.fromARGB(255, 231, 226, 226),
+                              )),
+                        ),
+                      ),
+                      SizedBox(
+                        height: height * 0.03,
+                      ),
+                      ClayContainer(
+                        height: 50,
+                        width: 50,
+                        color: baseColor,
+                        depth: 10000,
+                        emboss: true,
+                        spread: 1.10,
+                        borderRadius: 25,
+                        child: Padding(
+                          padding: const EdgeInsets.only(left: 4),
+                          child: IconButton(
+                              onPressed: () {},
+                              icon: const Icon(
+                                Icons.pause,
+                                size: 25,
+                                color: Color.fromARGB(255, 231, 226, 226),
+                              )),
+                        ),
+                      ),
+                      SizedBox(
+                        height: height * 0.03,
+                      ),
+                      ClayContainer(
+                        height: 50,
+                        width: 50,
+                        color: baseColor,
+                        depth: 10000,
+                        emboss: true,
+                        spread: 1.10,
+                        borderRadius: 25,
+                        child: Padding(
+                          padding: const EdgeInsets.only(left: 5),
+                          child: IconButton(
+                              onPressed: () {},
+                              icon: const Icon(
+                                Icons.volume_off_rounded,
+                                size: 25,
+                                color: Color.fromARGB(255, 231, 226, 226),
+                              )),
+                        ),
+                      ),
+                    ],
+                  ),
+                  Column(
+                    mainAxisAlignment: MainAxisAlignment.spaceAround,
+                    crossAxisAlignment: CrossAxisAlignment.center,
+                    children: [
+                      SizedBox(
+                        height: height * 0.03,
+                      ),
+                      ClayContainer(
+                        height: 50,
+                        width: 50,
+                        color: baseColor,
+                        depth: 10000,
+                        emboss: true,
+                        spread: 1.10,
+                        borderRadius: 25,
+                        child: Padding(
+                          padding: const EdgeInsets.only(left: 4),
+                          child: IconButton(
+                              onPressed: () {},
+                              icon: const Icon(
+                                Icons.tv,
+                                size: 25,
+                                color: Color.fromARGB(255, 231, 226, 226),
+                              )),
+                        ),
+                      ),
+                      SizedBox(height: height * 0.02),
+                      ClayContainer(
+                        height: 150,
+                        width: 50,
+                        color: baseColor,
+                        depth: 10000,
+                        emboss: true,
+                        spread: 1.10,
+                        borderRadius: 25,
+                        child: Padding(
+                          padding: const EdgeInsets.only(left: 4),
+                          child: Column(
+                            mainAxisAlignment: MainAxisAlignment.spaceAround,
+                            crossAxisAlignment: CrossAxisAlignment.center,
+                            children: [
+                              IconButton(
+                                  onPressed: () {},
+                                  icon: const Icon(
+                                    Icons.volume_up_rounded,
+                                    color: Colors.white,
+                                  )),
+                              IconButton(
+                                  onPressed: () {},
+                                  icon: const Icon(
+                                    Icons.volume_down_rounded,
+                                    color: Colors.white,
+                                  )),
+                            ],
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
+                ],
+              ),
+              SizedBox(
+                height: height * 0.03,
+              ),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceAround,
+                crossAxisAlignment: CrossAxisAlignment.center,
+                children: [
+                  ClayContainer(
+                    height: 50,
+                    width: 50,
+                    color: baseColor,
+                    depth: 10000,
+                    emboss: true,
+                    spread: 1.10,
+                    borderRadius: 25,
+                    child: Padding(
+                      padding: const EdgeInsets.only(left: 4),
+                      child: IconButton(
+                          onPressed: () {},
+                          icon: const Icon(
+                            Icons.border_all_rounded,
+                            size: 25,
+                            color: Color.fromARGB(255, 9, 18, 146),
+                          )),
+                    ),
+                  ),
+                  ClayContainer(
+                    height: 50,
+                    width: 50,
+                    color: baseColor,
+                    depth: 10000,
+                    emboss: true,
+                    spread: 1.10,
+                    borderRadius: 25,
+                    child: Padding(
+                      padding: const EdgeInsets.only(left: 4),
+                      child: IconButton(
+                          onPressed: () {},
+                          icon: const Icon(
+                            Icons.tv,
+                            size: 25,
+                            color: Color.fromARGB(255, 109, 10, 10),
+                          )),
+                    ),
+                  ),
+                  ClayContainer(
+                    height: 50,
+                    width: 50,
+                    color: baseColor,
+                    depth: 10000,
+                    emboss: true,
+                    spread: 1.10,
+                    borderRadius: 25,
+                    child: Padding(
+                      padding: const EdgeInsets.only(left: 4),
+                      child: IconButton(
+                          onPressed: () {},
+                          icon: const Icon(
+                            Icons.tv,
+                            size: 25,
+                            color: Color.fromARGB(255, 39, 112, 5),
+                          )),
+                    ),
+                  ),
+                  ClayContainer(
+                    height: 50,
+                    width: 50,
+                    color: baseColor,
+                    depth: 10000,
+                    emboss: true,
+                    spread: 1.10,
+                    borderRadius: 25,
+                    child: Padding(
+                      padding: const EdgeInsets.only(left: 4),
+                      child: IconButton(
+                          onPressed: () {},
+                          icon: const Icon(
+                            Icons.tv,
+                            size: 25,
+                            color: Color.fromARGB(255, 80, 4, 71),
+                          )),
+                    ),
+                  ),
+                ],
+              )
             ],
           ),
         ),
